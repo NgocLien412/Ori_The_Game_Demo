@@ -1,0 +1,381 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;    
+}
+
+body{ 
+    margin: 0%;
+    overflow-x: hidden;
+}
+
+.header::before{
+  content: "";
+  position: fixed;
+  background-position: center;
+  z-index: -1;
+  display: block;
+  background-image: url('big tree.jpg');
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+}
+
+.header video{
+    min-width: 100%; 
+    min-height: 100%;  
+    top:0;
+    left: 0; 
+    width: 100%;
+    height: 100%; 
+}
+
+.header h1{
+    text-align: center;
+    color:rgb(255, 255, 255);;
+    padding: 20px;
+    top:0;
+    left: 0; 
+    height: 100%;
+}
+
+.intro {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.feature {
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    color: rgb(2255, 255, 255);;   
+}
+
+.FContent{
+    position: relative;
+    top: 90px;
+    margin-left: 7%;
+    color:  rgb(37, 12, 113);
+    z-index: 2;
+
+    background-color: rgb(125, 143, 201);
+    clip-path:polygon(0 0, 42% 0%, 42% 40%, 0% 40%);
+    transition: all 1s ease;
+}
+.FContent:hover{
+    clip-path: polygon(0% 0%, 42% 0%, 42% 100%, 0% 100%);
+    color: aliceblue;
+}
+
+.FContent h3{
+    width: 500px;     
+    padding: 10px;
+    font-size: 26px;
+}
+
+.FContent p {
+   width: 450px; 
+   padding: 10px;
+   font-size: large;
+}
+
+.FImg img{
+    float: right;
+    margin-top: -29.8%;
+    width: 53%;
+}
+.purple img{
+    float: left;
+    width: 52.9%;
+    margin-top: -15%;
+}
+
+.skill {
+    left: 0; 
+    height: 100%;
+    position: relative;
+    top: 330px;
+    margin-left: 57%;
+    width: 500px;     
+    color:  rgb(62, 80, 24);
+
+    background-color: rgb(222, 183, 100);
+    clip-path:polygon(0 0, 57% 0%, 57% 35%, 0% 35%);
+    transition: all 1s ease;
+}
+
+.skill:hover{
+    clip-path: polygon(0% 0%, 97% 0%, 97% 100%, 0% 100%);
+    color: rgb(255, 255, 255);
+}
+
+.skill h3{     
+    padding: 10px;
+    font-size: 30px;
+}
+
+.skill p{
+    padding: 10px;
+    position: relative;
+    left: 4px;
+    width: 490px; 
+    font-size: large;
+}
+
+.orange img{
+    float: right;
+    width: 52%;
+    margin-top: 2%;
+}
+.SkillImg img{
+    float: left;
+    margin-top: -29.2%;
+    width: 52%;
+}
+
+.trailer{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.utubeHold{
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 56%;
+}
+
+.utubeHold iframe{
+    position:absolute;
+    top: 130px;
+    left: 20px;
+    width:100%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.trailer h2{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 90px;
+    width: 100%;
+    min-height: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+.trailer picture img{
+    width: 20%;
+    position: relative;
+    top: 855px;
+    left: -25%;
+}
+
+.search {
+    text-align: center;
+    position: relative;
+    bottom: -20px;
+    left: 0;
+    color: rgba(113, 72, 210, 0.61);
+    cursor: pointer;
+}
+
+.art h2{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 110px;
+    width: 100%;
+    min-height: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+.art img{
+    position: relative;
+    top: 150px;
+}
+
+.logo{
+    position: relative;
+    top: 220px;
+    width: 100%;
+    min-height: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+.end{
+    position: relative;
+    bottom: -10px;
+}
+
+.end p{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 240px;
+    width: 100%;
+    min-height: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+.pedia{
+    font-size: 18px;
+    color: rgb(75, 63, 167);
+    position: relative;
+    bottom: 7px;
+    width: 100%;
+    min-height: 30px;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    background-size: contain;
+}
+
+@media (max-width: 800px){
+    .header h1{
+        font-size: 1.4em;
+    }
+    .intro {
+        font-size: 0.9em;
+    }
+    .feature{
+        font-size: 1em;
+    }
+
+    .FImg,
+    .purple{
+        position: relative;
+        top: -40px;
+    }
+
+    .FSection{
+        position: relative;
+        top: -40px;
+    }
+
+    .FContent h3{
+        width: 200px;
+        font-size: 13px;
+    }
+
+    .FContent p{
+        font-size: 12px;
+        width: 240px;
+        padding: 2px;
+    }
+
+    .FContent{
+        position: relative;
+        top: 33px;
+        right: 31px;
+        width: 240px ;
+        clip-path: polygon(0 6%, 90% 6%, 90% 35%, 0% 35%);
+    }
+
+    .FContent:hover{
+        clip-path: polygon(0 6%, 100% 6%, 100% 97%, 0% 97%);
+    }
+
+    .skillSection{
+        position: relative;
+        top: -140px;
+    }
+    
+    .skill h3{
+        width: 200px;
+        font-size: 13px;
+    }
+
+    .skill p{
+        font-size: 12px;
+        width: 240px;
+        padding: 1px;
+    }
+
+    .skill{
+        z-index: 2;
+        position: relative;
+        top: 167px;
+        left: -15px;
+        width: 250px ;
+        clip-path: polygon(0 6%, 60% 6%, 60% 17%, 0% 17%);
+    }
+
+    .skill:hover{
+        clip-path: polygon(0 6%, 98% 6%, 98% 100%, 0% 100%);
+    }
+    
+    .trailer{
+        position:relative;
+        top: -150px;
+    }
+
+    .trailer h2{
+        font-size: 1.5em;
+    }
+
+    .trailer img{
+        position: relative;
+        top: -80px;
+        width: 50%;
+        display: inline-block;
+        align-items: center;
+    }
+
+    .utubeHold iframe{
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    left: 150px;
+    top: 70px;
+    width: 50%;
+    overflow: hidden;
+    }
+
+    .art h2{
+    font-size: 1.5em;
+    position: relative;
+    top: -110px;
+    width: 100%;
+    min-height: 30px;
+    display: inline-block;
+    text-align: center;
+    }
+
+    .art img{
+        position: relative;
+        top: -80px;
+        width: 50%;
+        display: inline-block;
+        align-items: center;
+        left: 25%;
+    }
+       
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
